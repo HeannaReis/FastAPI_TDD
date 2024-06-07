@@ -44,11 +44,20 @@ poetry init
 poetry install
 ```
 
-uvicorn main:app --reload
+uvicorn store.main:app --reload
 
 poetry run pre-commit install
 
 
+set PRE_COMMIT_ALLOW_NO_CONFIG=1
+git commit -m ":tada: feat(docs) Project Configs First Commit"
+git status
+
+
+poetry run pytest
+
+
+poetry run python -m store.main
 
 ##
 
