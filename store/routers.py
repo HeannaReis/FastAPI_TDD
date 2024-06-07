@@ -1,3 +1,6 @@
+'''
+/store/routers.py
+'''
 from fastapi import APIRouter
 from store.controllers.product import router as product
 

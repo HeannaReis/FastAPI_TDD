@@ -18,3 +18,8 @@ class PostgresClient:
         return self.Base
 
 db_client = PostgresClient()
+
+# Certifique-se de que as tabelas são criadas
+async def create_tables():
+    async with db_client.engine.begin() as conn:
+        await conn.run_sync(db_client.Base.metadata.create_all)

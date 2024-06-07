@@ -51,6 +51,9 @@ poetry run pre-commit install
 
 set PRE_COMMIT_ALLOW_NO_CONFIG=1
 git commit -m ":tada: feat(docs) Project Configs First Commit"
+
+PRE_COMMIT_ALLOW_NO_CONFIG=1 git commit -m ":sparkles: feat(endpoints) added end points and tests"
+    
 git status
 
 
